@@ -17,6 +17,10 @@ app.get('/search', async (req, res) => {
 	res.send(results)
 })
 
+app.get('/', (req, res) => {
+	res.send('test')
+})
+
 
 
 const port = process.env.PORT || 4000
